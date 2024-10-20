@@ -17,31 +17,31 @@ topology:
   nodes:
     r1:
       kind: ceos
-      startup-config: /home/clab/nanog92-hackathon-challenges/network-01/files/r1/startup-config
+      startup-config: /home/clab/n92/network-01/files/r1/startup-config
       mgmt-ipv4: 172.20.20.61
     r2:
       kind: ceos
-      startup-config: /home/clab/nanog92-hackathon-challenges/network-01/files/r2/startup-config
+      startup-config: /home/clab/n92/network-01/files/r2/startup-config
       mgmt-ipv4: 172.20.20.62
     r3:
       kind: ceos
-      startup-config: /home/clab/nanog92-hackathon-challenges/network-01/files/r3/startup-config
+      startup-config: /home/clab/n92/network-01/files/r3/startup-config
       mgmt-ipv4: 172.20.20.63
     r4:
       kind: ceos
-      startup-config: /home/clab/nanog92-hackathon-challenges/network-01/files/r4/startup-config
+      startup-config: /home/clab/n92/network-01/files/r4/startup-config
       mgmt-ipv4: 172.20.20.64
     host1:
       kind: linux
       binds:
-        - /home/clab/nanog92-hackathon-challenges/network-01/files/host-config/add-host-routes.sh:/tmp/add-host-routes.sh
+        - /home/clab/n92/network-01/files/host-config/add-host-routes.sh:/tmp/add-host-routes.sh
       exec:
         - bash /tmp/add-host-routes.sh config_host1
       mgmt-ipv4: 172.20.20.65
     host2:
       kind: linux
       binds:
-        - /home/clab/nanog92-hackathon-challenges/network-01/files/host-config/add-host-routes.sh:/tmp/add-host-routes.sh
+        - /home/clab/n92/network-01/files/host-config/add-host-routes.sh:/tmp/add-host-routes.sh
       exec:
         - bash /tmp/add-host-routes.sh config_host2
       mgmt-ipv4: 172.20.20.66
