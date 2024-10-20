@@ -17,19 +17,19 @@ topology:
   nodes:
     r1:
       kind: ceos
-      startup-config: /home/clab/n92/network-02/files/r1/startup-config
+      startup-config: /home/ubuntu/clab/n92/network-02/files/r1/startup-config
       mgmt-ipv4: 172.20.20.61
     r2:
       kind: ceos
-      startup-config: /home/clab/n92/network-02/files/r2/startup-config
+      startup-config: /home/ubuntu/clab/n92/network-02/files/r2/startup-config
       mgmt-ipv4: 172.20.20.62
     r3:
       kind: ceos
-      startup-config: /home/clab/n92/network-02/files/r3/startup-config
+      startup-config: /home/ubuntu/clab/n92/network-02/files/r3/startup-config
       mgmt-ipv4: 172.20.20.63
     r4:
       kind: ceos
-      startup-config: /home/clab/n92/network-02/files/r4/startup-config
+      startup-config: /home/ubuntu/clab/n92/network-02/files/r4/startup-config
       mgmt-ipv4: 172.20.20.64
 
   links:
